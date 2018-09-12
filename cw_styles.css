@@ -88,15 +88,42 @@ nav#outline h1{
 nav#outline>ol{
     line-height: 2em;
 margin: 0px 5px 0px 5px;
+list-style-type: upper-roman;
+}
+nav#outline>ol ol{
+    list-style-type: upper-alpha;
+}
+nav#outline a:link,
+nav#outline a:visited{
+   color: rgb(101, 101, 101);
+}
+
+nav#outline a:active,
+nav#outline a:hover{
+    color:  rgb(97, 97, 211);
 }
 /* Section Styles */
+section{
+    background-color: rgb(220, 220, 220);
+}
 
-
+section header h1{
+    padding-left: 10px;
+    font-size: 2.2em;
+}
 
 
 /* Article Styles */
-
-
+article h2{
+    font-size: 1.4em;
+}
+article p:first-of-type:first-letter{
+    font-size: 2em;
+}
 
 
 /* Aside Styles */
+aside h1{
+    font-size: 0.9em;
+    text-align: center;
+}
