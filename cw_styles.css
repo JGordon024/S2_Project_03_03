@@ -48,82 +48,105 @@ footer {
 }
 
 /* Body Header Styles */
-body>header{
-    background-color:rgb(97, 97, 211);
+body>header {
+    background-color: rgb(97, 97, 211);
 }
 
-body>header>h1{
+body>header>h1 {
     font-size: 4vw;
     color: rgba(255, 255, 255, 0.4);
     font-family: Limelight, cursive;
 }
 
 /* Navigation Styles */
-nav#mainLinks{
-padding-top: 5px;
-padding-bottom: 5px;
+/* The nav under the ID of mainLinks is having it's padding set */
+nav#mainLinks {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
+/* The nav#mainLinks is having it's color being set to white */
 nav#mainLinks a:link,
 nav#mainLinks a:visited {
     color: white;
 }
 
+/* The transparency of the links is being set when you hover above them, and the background is being set */
 nav#mainLinks a:active,
-nav#mainLinks a:hover{
+nav#mainLinks a:hover {
     opacity: 0.8;
     color: white;
     background-color: rgba(51, 51, 51, 0.5);
 }
+
 /* Outline Styles */
-nav#outline{
+/* The nav with the ID of outline is having it's color changed and font being sized */
+nav#outline {
     color: rgb(51, 51, 51);
     font-size: 0.8em;
 }
 
-nav#outline h1{
+/* The h1 element nested in the nav#outline is being centered */
+nav#outline h1 {
     text-align: center;
 }
 
-nav#outline>ol{
+/* The ordered list which are immidiate children of the nav#outline are getting it's margin and line height set. Furthermore, the listing is being changed from numbers to upper-roman numerals */
+nav#outline>ol {
     line-height: 2em;
-margin: 0px 5px 0px 5px;
-list-style-type: upper-roman;
-}
-nav#outline>ol ol{
-    list-style-type: upper-alpha;
-}
-nav#outline a:link,
-nav#outline a:visited{
-   color: rgb(101, 101, 101);
+    margin: 0px 5px 0px 5px;
+    list-style-type: upper-roman;
 }
 
-nav#outline a:active,
-nav#outline a:hover{
-    color:  rgb(97, 97, 211);
+nav#outline>ol ol {
+    list-style-type: upper-alpha;
 }
+
+/* The links on the side of the page, which are under the ID of outline, is getting changed to a grayish color */
+nav#outline a:link,
+nav#outline a:visited {
+    color: rgb(101, 101, 101);
+}
+
+/* When hovered over the link of the ID outline, the color is changed to purple */
+nav#outline a:active,
+nav#outline a:hover {
+    color: rgb(97, 97, 211);
+}
+
 /* Section Styles */
-section{
+/* The background color of the section element is being defined */
+section {
     background-color: rgb(220, 220, 220);
 }
 
-section header h1{
+/* h1 elements nested inside of the header which is nested inside of the section element is having it's font sized and is receiving padding on the left */
+section header h1 {
     padding-left: 10px;
     font-size: 2.2em;
 }
 
 
 /* Article Styles */
-article h2{
+/* All h2 elements within the article element are having their size defined to 1.4em */
+article h2 {
     font-size: 1.4em;
 }
-article p:first-of-type:first-letter{
+
+/* The first letter of the very first p tag within the element article is being increated in size */
+article p:first-of-type:first-letter {
     font-size: 2em;
 }
 
 
 /* Aside Styles */
-aside h1{
+/* All text within the aside element is set to 0.9em */
+aside {
     font-size: 0.9em;
+}
+
+/* h1 elements nested inside the aside element is being centered and having it's font size defined to 1.4 */
+aside h1 {
+    font-size: 1.4em;
     text-align: center;
 }
